@@ -1,4 +1,33 @@
-// Lista de fotos do casal
+// Gerenciamento de Temas
+const themeToggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+
+// Carregar tema salvo
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'psychologist';
+    applyTheme(savedTheme);
+}
+
+// Aplicar tema
+function applyTheme(theme) {
+    if (theme === 'programmer') {
+        html.classList.add('programmer-theme');
+        themeToggle.textContent = '👨‍💻';
+        themeToggle.title = 'Tema: Programador (clique para mudar)';
+    } else {
+        html.classList.remove('programmer-theme');
+        themeToggle.textContent = '💚';
+        themeToggle.title = 'Tema: Psicóloga (clique para mudar)';
+    }
+    localStorage.setItem('theme', theme);
+}
+
+// Toggle do tema
+themeToggle.addEventListener('click', () => {
+    const currentTheme = localStorage.getItem('theme') || 'psychologist';
+    const newTheme = currentTheme === 'programmer' ? 'psychologist' : 'programmer';
+    applyTheme(newTheme);
+});
 const photos = [
     'assets/eu_e_ela1.jpg',
     'assets/eu_e_ela2.jpg',
