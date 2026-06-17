@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni & Kelly - Nossa História</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">💕 Uni & Kelly</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Fotos</a></li>
+                <li><a href="#presentes">Presentes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Uni & Kelly</h1>
+            <p>Nossa Jornada de Amor</p>
+            <div class="hero-buttons">
+                <a href="#sobre" class="btn btn-primary">Veja Nossa História</a>
+                <a href="#galeria" class="btn btn-secondary">Nossas Fotos</a>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Nossa História</h2>
+            <div class="historia-content">
+                <div class="historia-text">
+                    <p>Nossa história começou há mais de seis anos, em um lugar que nenhum dos dois imaginava que seria o início de uma grande jornada: a Fatec. Enquanto Uni cursava Redes de Computadores, Kelly trabalhava na secretaria. Foi ali que nossos caminhos se cruzaram pela primeira vez e, para ele, foi amor à primeira vista.</p>
+                    
+                    <p>Apesar de termos origens diferentes, nossos sonhos sempre caminharam na mesma direção. Uni nasceu em José Gonçalves de Minas, uma pequena cidade do interior de Minas Gerais, carregando comigo o jeito simples, acolhedor e tranquilo do povo mineiro. Kelly nasceu em Barueri, São Paulo, e trouxe para nossa história toda a sua determinação, força e alegria.</p>
+                    
+                    <p>Ao longo dos anos, construímos uma relação baseada em amor, companheirismo, respeito e parceria. Como todo casal, enfrentamos desafios, tivemos divergências e aprendemos muito um com o outro. Mas, em cada etapa, escolhemos seguir juntos, fortalecendo ainda mais os laços que nos unem.</p>
+                    
+                    <p>Compartilhamos sonhos, planos e projetos para o futuro. Um dos maiores deles é conquistar cada vez mais liberdade em nossas carreiras e construir a vida que imaginamos, com mais tempo para aproveitar as pessoas que amamos e os momentos que realmente importam.</p>
+                    
+                    <p><strong>Hoje celebramos não apenas o nosso casamento, mas toda a caminhada que nos trouxe até aqui.</strong> 💑</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2>Nossas Fotos Especiais</h2>
+            <div class="gallery-grid">
+                <!-- As fotos serão inseridas aqui dinamicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentes Section -->
+    <section id="presentes" class="presentes">
+        <div class="container">
+            <h2>Presentes & Contribuições</h2>
+            <div class="presentes-content">
+                <div class="presentes-item">
+                    <h3>🎁 Lista de Presentes</h3>
+                    <p>Confira nossa lista de presentes na Amazon:</p>
+                    <a href="https://www.amazon.com.br/hz/wishlist/ls/NO8GHOZDP0ND?ref_=wl_share" target="_blank" class="btn btn-large">Ver Lista</a>
+                </div>
+                <div class="presentes-item">
+                    <h3>💝 PIX para Contribuir</h3>
+                    <img id="qrCodePix" src="" alt="QR Code PIX" class="qr-code-presentes">
+                    <p class="pix-text-presentes">uni.e.kelly@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Uni & Kelly. Feito com ❤️ e muita felicidade.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para imagens da galeria -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
